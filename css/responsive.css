@@ -1,0 +1,93 @@
+@media (max-width: 820px) {
+	#about-me {
+		font-size: 1.2em;
+		font-family: cursive;
+	}
+	.date {
+		top:0;
+	}
+}
+
+@media (max-width: 667px) {
+	nav li {
+		font-size: 17px; 
+	}
+	nav li:hover {
+	font-size: 22px;
+	}
+	#project {
+		padding-top: 25px; 
+		line-height: 30px; 
+		font-size: 1.2em;
+	}
+	.interest-skill {
+		font-size: 1.2em; 
+	}
+	.sm-section {
+		margin-left: -20px;
+	}
+	#profile-head {
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 10px;
+	}
+	#profile-head img {
+		width: 80px;
+	}
+	#profile-head p {
+		font-size: 1.2em;
+	}
+	#about-me {
+		font-size: 1em;
+		padding: 0;
+		font-family: cursive;
+	}
+	.list {
+		list-style: 12px;
+	}
+}
+
+@media (max-width: 530px) {
+	.sm-section {
+		margin-left: -30px;
+	}
+	.section-text {
+		font-family: sans-serif;
+		font-size: 1em;
+	}
+	#about-me {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 436px) {
+	#project {
+		padding-top: 15px; 
+		line-height: 20px; 
+		font-size: 0.8em;
+	}
+	.flex-container {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.inner-container {
+		height: 700px;
+		background-color: white;
+	}
+	#about-me {
+		padding: 40px 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.sm-section {
+		margin-left: -40px;
+	}
+	#about-me {
+		padding: 20px 0;
+	}
+	.section-text {
+		font-size: 0.8em;
+		line-height: 25px;
+	}
+}

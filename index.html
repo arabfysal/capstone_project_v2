@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muhammad N Muhammad</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/brands.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/solid.min.css">
+</head>
+<body>
+	<div class="container">
+		<span id="menu-ico" onclick="displayMenu()" style="width: 40px; background-color: #ede8e8; border-radius: 10px; ">
+			<i class="fas fa-bars" style="margin-left: 5px;"></i>
+		</span>
+		<nav style="display: none;">
+			<ul>
+				<li>
+					<li>
+					<span id="close-btn" class="fw-ico" onclick="closeDrawer()">
+						<i class="fas fa-times"></i>
+					</span>
+					
+				</li>
+				<li>
+					<span onclick="selectMenu('profile')">Profile</span>
+				</li>	
+				</li>
+				<li>
+					<span onclick="selectMenu('experience')">Experience</span>
+				</li>
+				<li>
+					<span onclick="selectMenu('education')">Education</span>
+				</li>
+				<li>
+					<span onclick="selectMenu('interest')">Interest</span>
+				</li>
+				<li>
+					<span onclick="selectMenu('skill')">Skills</span>
+				</li>
+				<li>
+					<span onclick="selectMenu('project')">Projects</span>
+				</li>
+				<li>
+					<span onclick="selectMenu('twitter')">Twitter</span> <!-- set inner container background to black -->
+				</li>			
+			</ul>
+		</nav>
+		<div id="mode-switch">
+            <img src="assets/sun.png" alt="sun">
+            <label class="switch">
+                <input type="checkbox" name="checkbox" id="dark-light" onclick="switchMode()">
+                    <span class="slider round"></span>
+            </label>
+            <img src="assets/moon.png" alt="moon">
+        </div>
+		<div class="sm-section">
+			<ul>
+				<li>
+					<a href="https://facebook.com/arabfysal">
+						<span style="" class="fw-ico">
+						<i class="fab fa-facebook" style=""></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/sir_fysal">
+						<span style=""  class="fw-ico">
+						<i class="fab fa-twitter"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/arabfysal">
+						<span style=""  class="fw-ico">
+						<i class="fab fa-linkedin-in"></i>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/arabfysal">
+						<span style=""  class="fw-ico">
+						<i class="fab fa-instagram"></i>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="inner-container">
+			<div>
+				<div id="profile" style="" class="wrapper">
+					<div id="profile-head">
+						<img src="assets/fysal.jpg" alt="Faisal">
+						<p>
+							<strong><em>Muhammad</em> </strong> N. Muhammad
+						</p>
+						<div>
+							<ul class="list">
+								<li>Phone Number: +234 908 312 9937</li>
+								<li>
+									<a href="mailto:arabfysal@gmail.com" style="color: black">arabfysal@gmail.com
+								</li>
+								<li>
+									<a href="https://arabfysal.netlify.app" style="color: black">arabfysal.netlify.app</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="about-me">
+						<p>Hi, I am Muhammad N Muhamad. I am passionate about problem solving and enthusiastic about the power of data and how it can be leveraged to build strong health systems</p>
+					</div>
+				</div>
+				<div id="experience" style="display: none;" class="wrapper"> <!-- Overflow in Y axis if too much edu -->
+					<h3 class="section-head">Experience</h3>
+					<div class="section-content section-text">
+						<h5>Flexisaf Edusoft Limited</h5>
+						<p>Software Engineer Intern</p>
+						<p>Kano, Nigeria</p>
+						<p class="date">Oct 2014- 2017</p>
+					</div>
+
+					<div class="section-content section-text">
+						<h5>Flexisaf Edusoft Limited</h5>
+						<p>Software Engineer Intern</p>
+						<p>Kano, Nigeria</p>
+						<p class="date">Oct 2014- 2017</p>
+					</div>
+				</div>
+				<div id="education" style="display: none;" class="wrapper"> <!-- Overflow in Y axis if too much edu -->
+					<h3 class="section-head">Education</h3>
+					<div class="section-content section-text">
+						<h5>Software Engineering</h5>
+						<p>Limkokwing University</p>
+						<p>Cyberjaya, Malaysia</p>
+						<p class="date">Oct 2014- 2017</p>
+					</div>
+					<div class="section-content section-text">
+						<h5>Software Engineering</h5>
+						<p>Limkokwing University</p>
+						<p>Cyberjaya, Malaysia</p>
+						<p class="date">Oct 2014- 2017</p>
+					</div>	
+				</div>
+				<div id="interest" style="display: none;" class="wrapper">
+					<h3 class="section-head">Interest</h3>
+					<div class="flex-container">
+						<div>
+							<ul>
+								<li>
+									<img src="assets/cloud.png" alt="cloud">
+									<span class="interest-skill">...Cloud</span>
+								</li>
+								<li>
+									<img src="assets/ehs.jpg" alt="cloud">
+									<span class="interest-skill">...e-health systems</span>
+								</li>
+								<li>
+									<img src="assets/web.png" alt="cloud">
+									<span class="interest-skill" ">...Web</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>
+									<img src="assets/gis.png" alt="cloud">
+									<span class="interest-skill">...GIS</span>
+								</li>
+								<li>
+									<img src="assets/bigdata.png" alt="cloud">
+									<span class="interest-skill">...Big Data</span>
+								</li>
+								<li>
+									<img src="assets/agile.jpg" alt="cloud">
+									<span class="interest-skill">...Project Management</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="skill" style="display: none;" class="wrapper">
+					<h3 class="section-head">Skills</h3>
+					<div class="flex-container">
+						<div>
+							<ul>
+								<li>
+									<img src="assets/html_logo.png" alt="HTML">
+									<span class="interest-skill">...HTML</span>
+								</li>
+								<li>
+									<img src="assets/css_logo.png" alt="CSS">
+									<span class="interest-skill">...CSS</span>
+								</li>
+								<li>
+									<img src="assets/js_logo.png" alt="JS">
+									<span class="interest-skill" ">...Javascript</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>
+									<img src="assets/react.png" alt="cloud">
+									<span class="interest-skill">...React</span>
+								</li>
+								<li>
+									<img src="assets/favicon.ico" alt="cloud" height="42">
+									<span class="interest-skill">...Vue</span>
+								</li>
+								<li>
+									<img src="assets/python.png" alt="cloud">
+									<span class="interest-skill">...Python</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="project" style="display: none;" class="wrapper">
+					<h3 class="section-head">Projects</h3>
+					<div id="project" class="section-content">
+						<li>
+							<a href="#">github.com/arabfysal/dmw</a>
+						</li>
+						<li>
+							<a href="#">github.com/arabfysal/ehaAcademy</a>
+						</li>
+						<li>
+							<a href="#">github.com/arabfysal.com/capstone</a>
+						</li>
+						<li>
+							<a href="#">github.com/arabfysal.com/qrcode</a>
+						</li>
+						<li>
+							<a href="#">github.com/arabfysal/panaceacharity</a>
+						</li>
+					</div>
+				</div>
+				<div id="twitter" style="display: none;" class="wrapper">
+					<a class="twitter-timeline" data-width="750" data-height="450" data-theme="dark" href="https://twitter.com/sir_fysal?ref_src=twsrc%5Etfw">Tweets by sir_fysal</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/main.js">
+</script>
+</html>
